@@ -23,7 +23,7 @@ services:
       # OVERRIDE: comma seperated list of ngram language models to download (if not existing)
       #           Valid languages are "en", "de", "es", "fr" and "nl". Image default: none
       #           example: download_ngrams_for_langs: en,de,es
-      download_ngrams_for_langs: en
+      # download_ngrams_for_langs: en
       # OPTIONAL: container path for the ngrams data. Image default: /ngrams
       # langtool_languageModel: /ngrams
       # OVERRIDE: container path to the fasttext binary. Image default: /usr/local/bin/fasttext
@@ -53,6 +53,6 @@ services:
       # DEBUG_ENTRYPOINT: false
     volumes:
       # OPTIONAL: The location of ngrams data on the local machine
-      - ./ngrams:/ngrams
+      # - ./ngrams:/ngrams
       # OPTIONAL: The location of the fasttext model on the local machine
       - ./fasttext:/fasttext
